@@ -11,10 +11,10 @@ st.subheader('By: :red[Suraj Honkamble]')
 #Adding Image
 FILE_DIR = os.path.dirname(os.pardir)
 dir_of_interest = os.path.join(FILE_DIR, "resourses")
-IMAGE_PATH = os.path.join(dir_of_interest, "Image")
-IMAGE_PATH1 = os.path.join(IMAGE_PATH, "car.png")
+IMAGE_PATH = os.path.join(dir_of_interest, "Image", "car.png")
+#IMAGE_PATH1 = os.path.join(IMAGE_PATH, "car.png")
 
-img = image.imread(IMAGE_PATH1)
+img = image.imread(IMAGE_PATH)
 st.image(img)
 
 #Using markdown cell type

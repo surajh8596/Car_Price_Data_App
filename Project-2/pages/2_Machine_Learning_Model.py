@@ -8,9 +8,9 @@ st.title("What is your Car :car: Price?")
 #Loading the dataset
 FILE_DIR = os.path.dirname(os.pardir)
 dir_of_interest = os.path.join(FILE_DIR, "resourses")
-DATA_PATH = os.path.join(dir_of_interest, "Data")
-DATA_PATH1 = os.path.join(DATA_PATH, "CarPricesData.pkl")
-df = pd.read_pickle(DATA_PATH1)
+DATA_PATH = os.path.join(dir_of_interest, "Data", "CarPricesData.pkl")
+#DATA_PATH1 = os.path.join(DATA_PATH, "CarPricesData.pkl")
+df = pd.read_pickle(DATA_PATH)
 
 #Preproccing the data
 X=df.drop('Price', axis=1).values
