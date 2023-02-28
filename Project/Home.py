@@ -10,8 +10,8 @@ st.subheader('By: :red[Suraj Honkamble]')
 
 #Adding Image
 FILE_DIR1 = os.path.dirname(os.path.abspath(__file__))
-FILE_DIR = os.path.join(FILE_DIR1,os.pardir)
-dir_of_interest = os.path.join(FILE_DIR, "resourses")
+#FILE_DIR = os.path.path(os.pardir)
+dir_of_interest = os.path.join(FILE_DIR1, "resourses")
 IMAGE_PATH = os.path.join(dir_of_interest, "Image")
 IMAGE_PATH1 = os.path.join(IMAGE_PATH, "car.png")
 
